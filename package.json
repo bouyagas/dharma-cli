@@ -12,7 +12,9 @@
     "borrow": "npm run compile && ENV=development dharma borrow",
     "authenticate": "npm run compile && ENV=development dharma authenticate",
     "invest": "npm run compile && ENV=development dharma invest",
-    "wallet": "npm run compile && ENV=development dharma wallet"
+    "wallet": "npm run compile && ENV=development dharma wallet",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -40,7 +42,8 @@
     "redux": "^3.7.2",
     "request-promise": "^4.2.1",
     "web3": "^0.20.1",
-    "web3-provider-engine": "^13.2.9"
+    "web3-provider-engine": "^13.2.9",
+    "snyk": "^1.46.0"
   },
   "devDependencies": {
     "babel-plugin-dynamic-import-node": "^1.0.2",
@@ -56,5 +59,6 @@
     "sinon": "^2.4.1",
     "uuid": "^3.1.0"
   },
-  "false": {}
+  "false": {},
+  "snyk": true
 }
