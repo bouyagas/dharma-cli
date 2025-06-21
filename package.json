@@ -12,7 +12,9 @@
     "borrow": "npm run compile && ENV=development dharma borrow",
     "authenticate": "npm run compile && ENV=development dharma authenticate",
     "invest": "npm run compile && ENV=development dharma invest",
-    "wallet": "npm run compile && ENV=development dharma wallet"
+    "wallet": "npm run compile && ENV=development dharma wallet",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -28,19 +30,20 @@
     "command-line-commands": "^2.0.1",
     "dharma-client": "^0.0.18",
     "dharma-js": "^0.1.40",
-    "ethereumjs-util": "^5.1.2",
-    "ethereumjs-wallet": "^0.6.0",
+    "ethereumjs-util": "^5.2.1",
+    "ethereumjs-wallet": "^1.0.2",
     "fs-extra": "^3.0.1",
-    "inquirer": "^3.2.1",
-    "meow": "^3.7.0",
+    "inquirer": "^9.0.0",
+    "meow": "^12.1.0",
     "moment": "^2.18.1",
     "node-schedule": "^1.2.3",
     "opn": "^5.1.0",
-    "prompt": "^1.0.0",
+    "prompt": "^1.2.0",
     "redux": "^3.7.2",
     "request-promise": "^4.2.1",
     "web3": "^0.20.1",
-    "web3-provider-engine": "^13.2.9"
+    "web3-provider-engine": "^17.0.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-plugin-dynamic-import-node": "^1.0.2",
@@ -56,5 +59,6 @@
     "sinon": "^2.4.1",
     "uuid": "^3.1.0"
   },
-  "false": {}
+  "false": {},
+  "snyk": true
 }
